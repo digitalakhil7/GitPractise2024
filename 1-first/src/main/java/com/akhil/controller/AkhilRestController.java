@@ -11,4 +11,9 @@ public class AkhilRestController {
     public ResponseEntity<String> test(){
         return new ResponseEntity<>("Hello World", HttpStatus.OK);
     }
+
+    @GetMapping("/sayHello")
+    public ResponseEntity<String> sayHello(){
+        return new ResponseEntity<>("Hello World", HttpStatus.OK);
+    }
 }
